@@ -1,4 +1,4 @@
 function litres(time) {
-    return  Math.ceil(time/2)
+    return  Math.floor(time/2)
 }
-litres(3)
+module.exports = litres;
