@@ -1,12 +1,7 @@
-In a small town the population is p0 = 1000 at the beginning of a year. The population regularly increases by 2 percent per year and moreover 50 new inhabitants per year come to live in the town. How many years does the town need to see its population greater or equal to p = 1200 inhabitants?
+Given an array of digitals numbers, return a new array of length number containing the last even numbers from the original array (in the same order). The original array will be not empty and will contain at least "number" even numbers.
 
-At the end of the first year there will be: 
-1000 + 1000 * 0.02 + 50 => 1070 inhabitants
+For example:
 
-At the end of the 2nd year there will be: 
-1070 + 1070 * 0.02 + 50 => 1141 inhabitants (number of inhabitants is an integer)
-
-At the end of the 3rd year there will be:
-1141 + 1141 * 0.02 + 50 => 1213
-
-It will need 3 entire years.
+([1, 2, 3, 4, 5, 6, 7, 8, 9], 3) => [4, 6, 8]
+([-22, 5, 3, 11, 26, -6, -7, -8, -9, -8, 26], 2) => [-8, 26]
+([6, -25, 3, 7, 5, 5, 7, -3, 23], 1) => [6]
