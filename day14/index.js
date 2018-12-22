@@ -14,8 +14,17 @@
 //   return vowelsCount;
 // }
 
-function getCount(str) {
-  return (str.match(/[aeiou]/ig)||[]).length;
-}
+// function getCount(str) {
+//   return (str.match(/[aeiou]/ig)||[]).length;
+// }
+
+// function getCount(str) {
+//   let vowels = ['a','e','i','o','u'];
+//   return str.split('').filter(letter => {
+//     return vowels.includes(letter)? true : false;
+//   }).length;
+// }
+
+const getCount = str => str.replace(/[^aeiou]/g, '').length;
 
 module.exports = getCount
